@@ -15,7 +15,7 @@
     <!-- START NAV BAR -->
 
     <header class="d-flex bg-light">
-      <nav class="container mt-5 mb-5">
+      <nav class="container pt-5 pb-4">
         <ul class="nav d-flex flex-wrap justify-content-between
           align-items-baseline">
           <li class="display-4 mb-3 mr-auto text-monospace">
@@ -27,15 +27,15 @@
                 <a href="#contact">
                   <img style="height: 30px; width: auto" class="img-fluid"
                     src="https://image.flaticon.com/icons/svg/181/181511.svg"
-                    alt="contactMe logo"><span class="ml-1">Kontakt</span>
+                    alt="contactMe logo"><span class="pl-2">Kontakt</span>
                 </a>
               </div>
               <div class="d-flex">
-                <a class="ml-2" href="#bio">
+                <a class="ml-3" href="#bio">
                   <img style="height: 30px; width: auto" class="img-fluid"
                     src="https://image.flaticon.com/icons/svg/1167/1167203.svg"
                     alt="cv logo">
-                  <span class="ml-1">Biografie</span></a>
+                  <span class="">Biografie</span></a>
               </div>
             </div>
           </li>
@@ -48,14 +48,20 @@
 
     <!-- START TOP SUMMARY -->
 
-    <section class="container mt-5 mb-3 mb-md-0">
+    <section class="container mt-4 mt-md-3 mb- mb-md-0">
       <div class="row">
 
         <!-- Picture with subline-->
-        <div class="col-12 col-md-6 mb-3">
-          <img class="img-fluid img-thumbnail rounded shadow-sm"
+        <div class="col-12 col-md-6 mb-3 d-flex flex-column
+          align-items-center">
+          <img class="d-md-none img-thumbnail rounded shadow-sm"
+            src="img/IMG_1998_wide.jpg" alt="picture of author" style="height:
+            auto; width: 100vw">
+          <img class="img-fluid d-none d-md-block img-thumbnail rounded
+            shadow-sm"
             src="/img/IMG_1998.jpg" alt="picture of author">
-          <p class="figure-caption text-justify text-secondary px-2">Am liebsten
+          <p class="figure-caption text-justify blockquote-footer px-2 pt-2">Am
+            liebsten
             fahre
             ich an
             der frischen Luft
@@ -65,34 +71,60 @@
         <!-- Skill Summary-->
 
         <div class="col">
-          <h3 class="h5">What I know (soon!)</h3>
+          <h3 class="h5 pb-2"><u>My skills & experience</u></h3>
           <ul class="list-group-horizontal pl-0">
-            <li class="list-group-item d-inline-block">Jira
+            <li class="list-group-item list-group-item-warning d-inline-block
+              mb-1 shadow">Java
+              <span class="badge badge-pill">👎</span>
+            </li>
+            <li class="list-group-item list-group-item-success d-inline-block
+              mb-1 shadow">Bootstrap
               <span class="badge badge-pill">👍</span>
             </li>
-            <li class="list-group-item d-inline-block">Bootstrap
+            <li class="list-group-item list-group-item-success d-inline-block
+              mb-1 shadow">Markdown
               <span class="badge badge-pill">👍</span>
             </li>
-            <li class="list-group-item d-inline-block">Markdown
-              <span class="badge badge-pill">👍</span>
+            <li class="list-group-item list-group-item-primary d-inline-block
+              mb-1 shadow">JavaScript
+              <span class="badge badge-pill">👌</span>
             </li>
-            <li class="list-group-item d-inline-block">JavaScript
-              <span class="badge badge-pill">👍</span>
+            <li class="list-group-item list-group-item-warning d-inline-block
+              mb-1 shadow">CSS
+              <span class="badge badge-pill">👎</span>
             </li>
-            <li class="list-group-item d-inline-block">CSS
-              <span class="badge badge-pill">👍</span>
+            <li class="list-group-item list-group-item-danger d-inline-block
+              mb-1 shadow">JS frameworks
+              <span class="badge badge-pill">😢</span>
             </li>
-            <li class="list-group-item list-group-item-danger d-inline-block">...spinning
-              it positively...</li>
           </ul>
 
-          <h3 class="h5">My spare time</h3>
+          <h3 class="h5 pb-2"><u>My spare time</u></h3>
           <ul class="list-group-horizontal pl-0">
-            <li class="list-group-item d-inline-block">Swim 🏊</li>
-            <li class="list-group-item d-inline-block">Bike 🚴‍</li>
-            <li class="list-group-item d-inline-block">Run 🏃‍</li>
+            <li class="list-group-item d-inline-block bg-light shadow">Swim 🏊</li>
+            <li class="list-group-item d-inline-block bg-light shadow">Bike 🚴‍</li>
+            <li class="list-group-item d-inline-block bg-light shadow">Run 🏃‍</li>
+            <!-- Start Desktop / Tablet only-->
+            <div class="d-none d-lg-block d-flex flex-column mt-5">
+              <h6 class="d-md-block d-flex figure-caption text-justify
+                blockquote-footer">Bike
+                & Swim in
+                Roth</h6>
+              <img style="height: 250px; width: auto" src="/img/Roth.jpeg"
+                class="img-fluid img-thumbnail rounded shadow-sm"
+                alt="biking in Roth">
+              <img style="height: auto; width: 370px" src="/img/swim.JPG"
+                class="img-fluid img-thumbnail rounded shadow-sm d-none
+                d-xl-block"
+                alt="pre swim selfie">
+            </div>
+
+            <!-- END Desktop / Tablet only -->
+
           </ul>
+
         </div>
+
 
       </div>
     </section>
@@ -102,8 +134,8 @@
     <!-- Divisor My Contact Details-->
 
     <div class="bg-light d-flex align-items-center py-3 my-3 border-top
-      border-bottom border-light">
-      <h6 class="h3 container" id="contact">My Contact Details</h6>
+      border-bottom border-light" id="contact">
+      <h6 class="h3 container">My Contact Details</h6>
     </div>
 
     <!-- Divisor My Contact Details-->
@@ -136,15 +168,15 @@
 
       <figure class="container-fluid d-flex justify-content-center">
         <a href="https:www.linked.com" class="text-decoration-none text-dark">
-          <div class="wrapperTwo p-md-1">
+          <div class="wrapperTwo p-md-3">
             <div class="wrapper p-4
               p-md-p5">
-              <img class="img-fluid p-md-2"
-                src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png"
-                alt="LinkedIn logo">
+              <img class="img-fluid"
+                src="img/Codepen.png"
+                alt="Codepen logo">
             </div>
           </div>
-          <figcaption class="text-center">Find me on
+          <figcaption class="text-center mt-xl-n3">Find me on
             Codepen</figcaption>
         </a>
       </figure>
@@ -155,7 +187,7 @@
             <div class="wrapper p-4 p-md-p5">
               <img class="img-fluid"
                 src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-github-1.png"
-                alt="LinkedIn logo">
+                alt="Github logo">
             </div>
           </div>
           <figcaption class="text-center">Find me on
@@ -184,8 +216,8 @@
 
     <!-- Divisor My Contact Details-->
 
-    <div class="bg-light d-flex align-items-center py-3 my-3">
-      <h6 class="h3 container" id="bio">My Journey thus far...</h6>
+    <div class="bg-light d-flex align-items-center py-3 mb-3" id="bio">
+      <h6 class="h3 container">My Journey thus far...</h6>
     </div>
 
     <!-- Divisor My Contact Details-->
@@ -242,7 +274,7 @@
               <div class="d-flex justify-content-start">
                 <h5>Product Owner Savings & Spendings</h5>
               </div>
-              <p>Building a bank. from the ground up 💪</p>
+              <p>Building a bank. from the ground up 🏦</p>
             </li>
 
             <!-- START collapsed items-->
