@@ -14,34 +14,56 @@
     -->
     <!-- START NAV BAR -->
 
-    <nav class="container mt-5 mb-5">
-      <ul class="nav d-flex flex-wrap justify-content-between
-        align-items-baseline">
-        <li class="display-4 mb-3 mr-auto text-monospace">
-          <a href="#" class="text-secondary">Sebastian Neumair</a>
-        </li>
-        <li>
-          <a href="#">Kontakt</a>
-          <a class="ml-2" href="#">Biografie</a>
-        </li>
-      </ul>
-    </nav>
+    <header class="d-flex bg-light">
+      <nav class="container mt-5 mb-5">
+        <ul class="nav d-flex flex-wrap justify-content-between
+          align-items-baseline">
+          <li class="display-4 mb-3 mr-auto text-monospace">
+            <a href="#" class="text-secondary">Sebastian Neumair</a>
+          </li>
+          <li>
+            <div class="wrapper d-flex">
+              <div class="d-flex">
+                <a href="#contact">
+                  <img style="height: 30px; width: auto" class="img-fluid"
+                    src="https://image.flaticon.com/icons/svg/181/181511.svg"
+                    alt="contactMe logo"><span class="ml-1">Kontakt</span>
+                </a>
+              </div>
+              <div class="d-flex">
+                <a class="ml-2" href="#bio">
+                  <img style="height: 30px; width: auto" class="img-fluid"
+                    src="https://image.flaticon.com/icons/svg/1167/1167203.svg"
+                    alt="cv logo">
+                  <span class="ml-1">Biografie</span></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- END NAV BAR-->
 
+
     <!-- START TOP SUMMARY -->
 
-    <section class="container mt-5 mb-5">
+    <section class="container mt-5 mb-3 mb-md-0">
       <div class="row">
 
         <!-- Picture with subline-->
-        <div class="col-12 col-md-6">
-          <img class="img-fluid img-thumbnail rounded"
-            src="https://via.placeholder.com/300" alt="picture of author">
-          <p class="figure-caption">Here you will find info about me. Soon...</p>
+        <div class="col-12 col-md-6 mb-3">
+          <img class="img-fluid img-thumbnail rounded shadow-sm"
+            src="/img/IMG_1998.jpg" alt="picture of author">
+          <p class="figure-caption text-justify text-secondary px-2">Am liebsten
+            fahre
+            ich an
+            der frischen Luft
+            Rad. Aber laufen im Central Park ist auch ganz schön. </p>
         </div>
 
         <!-- Skill Summary-->
+
         <div class="col">
           <h3 class="h5">What I know (soon!)</h3>
           <ul class="list-group-horizontal pl-0">
@@ -77,9 +99,19 @@
 
     <!-- END TOP SUMMARY -->
 
+    <!-- Divisor My Contact Details-->
+
+    <div class="bg-light d-flex align-items-center py-3 my-3 border-top
+      border-bottom border-light">
+      <h6 class="h3 container" id="contact">My Contact Details</h6>
+    </div>
+
+    <!-- Divisor My Contact Details-->
+
     <!-- START Contact Details-->
 
     <section class="container">
+
       <address class="d-flex flex-wrap justify-content-between
         border p-3">
 
@@ -150,32 +182,42 @@
 
     <!-- END Social Media Link-->
 
+    <!-- Divisor My Contact Details-->
+
+    <div class="bg-light d-flex align-items-center py-3 my-3">
+      <h6 class="h3 container" id="bio">My Journey thus far...</h6>
+    </div>
+
+    <!-- Divisor My Contact Details-->
+
     <!-- START Personal Information & CV -->
 
     <section class="container">
 
       <div class="row">
 
-        <article class="col-12 col-md-6">
-          <h4 class="h5">What I habe been up to so far</h4>
+        <article class="col-12 col-md-6 px-md-3 mb-3">
+          <h4 class="h5 mb-3">Was ich bisher so gemacht habe?</h4>
           <p class="text-body text-justify">Lorem ipsum dolor sit amet,
             consectetur
             adipisicing elit. Libero
             reprehenderit ullam nesciunt ipsam doloribus delectus impedit.
             Voluptatem expedita odit nisi quam, soluta dolore! Similique at
             dolor ea sapiente laborum minus.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          <p class="text-body text-justify">Lorem ipsum dolor sit
+            amet
+            consectetur adipisicing elit. Voluptates
             cumque unde fuga consequuntur quaerat vero inventore saepe, aliquid
             quidem adipisci dicta ratione magni quasi atque cum maiores iusto
             numquam voluptas.</p>
         </article>
 
-        <article class="col col-md-6">
-          <h4 class="h5">Curriculum Vitae</h4>
+        <article class="col col-md-6 px-md-3">
+          <h4 class="h5 mb-3">Curriculum Vitae</h4>
 
-          <ul class="list-item pl-0">
-            <li class="list-group-item list-group-item-action">
+          <ul class="list-item pl-0 mb-5">
 
+            <li class="list-group-item list-group-item-action shadow disabled">
               <div class="d-flex mb-2 mt-3">
                 <small class="align-self-center">ab März 2019</small>
                 <img class="img-fluid mb-2
@@ -189,8 +231,7 @@
               <p>From product manager to web developer in 12 weeks 💪</p>
             </li>
 
-            <li class="list-group-item list-group-item-action">
-
+            <li class="list-group-item list-group-item-action shadow">
               <div class="d-flex mb-2 mt-3">
                 <small class="align-self-center">November 2018 bis März 2019</small>
                 <img style="height: 50px; width: 100px" class="img-fluid mb-2
@@ -204,13 +245,36 @@
               <p>Building a bank. from the ground up 💪</p>
             </li>
 
+            <!-- START collapsed items-->
 
+            <li class="list-group-item list-group-item-action shadow">
+              <div class="wrapper d-flex mb-2 mt-3">
+                <h6 class="text-secondary mr-auto">Product Manager</h6>
+                <img style="height: 30px; width: auto"
+                  src="https://www.check24.de/assets/images/web/misc/download/Logo_Check24.png"
+                  alt="check24 logo">
+              </div>
+            </li>
 
+            <li class="list-group-item list-group-item-action shadow">
+              <div class="wrapper d-flex mb-2 mt-3">
+                <h6 class="text-secondary mr-auto">Master of Finance</h6>
+                <img style="height: 30px; width: auto"
+                  src="https://staff.napier.ac.uk/services/corporateaffairs/downloadable-resources/PublishingImages/EdNapUniLogoCMYK.jpg"
+                  alt="napier university logo">
+              </div>
+            </li>
 
-            <li class="list-group-item list-group-item-action">Innoble</li>
-            <li class="list-group-item list-group-item-action">CHECK24</li>
-            <li class="list-group-item list-group-item-action">Master</li>
-            <li class="list-group-item list-group-item-action">Bachelor</li>
+            <li class="list-group-item list-group-item-action shadow">
+              <div class="wrapper d-flex mb-2 mt-3">
+                <h6 class="text-secondary mr-auto">Bachelor of Finance</h6>
+                <img style="height: 30px; width: auto"
+                  src="http://kunden.tristan-germer.de/hm/studieninformationstag/2014/img/HM-Logo-RGB-transparent-418x174.png"
+                  alt="HM miuenchen university logo">
+              </div>
+            </li>
+
+            <!-- END collapsed items-->
           </ul>
         </article>
 
@@ -218,8 +282,16 @@
 
     </section>
 
-
     <!-- END Personal Information & CV -->
+
+    <!-- START footer -->
+
+    <div class="card">
+      <footer class="card-header small">by sebastianneumair powered by
+        @neuefische</footer>
+    </div>
+
+    <!-- END footer-->
 
   </body>
 </html>
