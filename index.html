@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Sebastians personal website powered by
-      bootstrap" />
-    <meta name="keywords" contents="personal website, bootstrap, neue fische,
+      css" />
+    <meta name="keywords" contents="personal website, pure css no frameworks,
+      neue fische,
       bootcamp">
     <meta name="author" content="Sebastian Neumair">
     <title>my first website</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="icon" type="image/png" sizes="16x16"
       href="img/favicon_io/favicon-16x16.png">
   </head>
@@ -21,38 +21,34 @@
     -->
     <!-- START NAV BAR -->
 
-    <header class="bg-light">
-      <nav class="container pt-5 pb-4">
-        <ul
-          class="nav d-flex flex-wrap justify-content-between
-          align-items-baseline">
-          <li class="display-4 mb-3 mr-auto text-monospace">
-            <a href="#" class="text-secondary">Sebastian Neumair</a>
-          </li>
+    <header>
+      <nav>
+        <ul>
           <li>
-            <div class="wrapper d-flex">
-              <div class="d-flex">
-                <a href="#contact">
-                  <img
-                    style="height: 30px; width: auto"
-                    class="img-fluid"
-                    src="https://image.flaticon.com/icons/svg/181/181511.svg"
-                    alt="contactMe logo"
-                    />
-                  <span class="text-decoration-none text-dark pl-1">Kontakt</span>
-                </a>
-              </div>
-              <div class="d-flex">
-                <a class="ml-3" href="#bio">
-                  <img
-                    style="height: 30px; width: auto"
-                    class="img-fluid"
-                    src="https://image.flaticon.com/icons/svg/1167/1167203.svg"
-                    alt="cv logo"
-                    />
-                  <span class="text-decoration-none text-dark">Biografie</span></a>
-              </div>
+            <a href="#">Sebastian Neumair</a>
+          </li>
+
+          <li>
+
+            <div>
+              <a href="#contact">
+                <img
+                  src="https://image.flaticon.com/icons/svg/181/181511.svg"
+                  alt="contactMe logo"
+                  />
+                <span>Kontakt</span>
+              </a>
+
+
+              <a href="#bio">
+                <img
+                  src="https://image.flaticon.com/icons/svg/1167/1167203.svg"
+                  alt="cv logo"
+                  />
+                <span>Biografie</span></a>
             </div>
+
+
           </li>
         </ul>
       </nav>
@@ -62,111 +58,89 @@
 
     <!-- START TOP SUMMARY -->
 
-    <section class="container mt-4 mt-md-3">
-      <div class="row">
-        <!-- Picture with subline-->
+    <section>
+      <!-- Picture with subline-->
 
-        <div
-          class="col-12 col-md-6 mb-3 d-flex flex-column">
+      <div>
+        <!-- Desktop Picture -->
+        <img
+          src="img/IMG_1998_wide.jpg"
+          alt="picture of author"
+          />
+        <!-- Mobile Picture -->
+        <img
+          src="/img/IMG_1998.jpg"
+          alt="picture of author"
+          />
+        <p>
+          In meiner Freizeit verbringe ich viel Zeit an der frischen Luft.
+          Schwimmen, Radfahren oder wie hier Laufen im Central Park.
+        </p>
+      </div>
+
+      <!-- Skill Summary-->
+
+      <div>
+        <!-- Card Elements for Key Skills-->
+        <h3>My skills & experience</h3>
+        <ul>
+          <li>>
+            Java
+            <span>👎</span>
+          </li>
+          <li>
+            Bootstrap
+            <span>👍</span>
+          </li>
+          <li>
+            Markdown
+            <span>👍</span>
+          </li>
+          <li>
+            JavaScript
+            <span>👌</span>
+          </li>
+          <li>
+            CSS
+            <span>👎</span>
+          </li>
+          <li>
+            JS frameworks
+            <span>😢</span>
+          </li>
+        </ul>
+
+        <!-- Card Elements for favorite spare time activities-->
+        <h3>My spare time</h3>
+        <ul>
+          <li>
+            Swim 🏊
+          </li>
+          <li>
+            Bike 🚴‍
+          </li>
+          <li>
+            Run 🏃‍
+          </li>
+
+          <!-- Start Images Desktop / Tablet only-->
+          <h6>
+            Challenge Roth
+          </h6>
           <img
-            class="img-fluid d-md-none img-thumbnail rounded shadow-sm"
-            src="img/IMG_1998_wide.jpg"
-            alt="picture of author"
+            style="height: 250px; width: auto"
+            src="/img/Roth.jpeg"
+            alt="biking in Roth"
             />
+          <!-- Additional Image for extra large screens-->
           <img
-            class="img-fluid d-none d-md-block img-thumbnail rounded
-            shadow-sm"
-            src="/img/IMG_1998.jpg"
-            alt="picture of author"
+            style="height: auto; width: 370px"
+            src="/img/swim.JPG"
+            alt="pre swim selfie"
             />
-          <p class="figure-caption text-justify blockquote-footer px-2 pt-2">
-            In meiner Freizeit verbringe ich viel Zeit an der frischen Luft.
-            Schwimmen, Radfahren oder wie hier Laufen im Central Park.
-          </p>
-        </div>
 
-        <!-- Skill Summary-->
-
-        <div class="col">
-          <h3 class="h5 pb-2"><u>My skills & experience</u></h3>
-          <ul class="list-group-horizontal pl-0">
-            <li
-              class="list-group-item list-group-item-warning d-inline-block
-              mb-1 mb-md-2 mr-md-1 shadow">
-              Java
-              <span class="badge badge-pill">👎</span>
-            </li>
-            <li
-              class="list-group-item list-group-item-success d-inline-block
-              mb-1 mb-md-2 mr-md-1 shadow">
-              Bootstrap
-              <span class="badge badge-pill">👍</span>
-            </li>
-            <li
-              class="list-group-item list-group-item-success d-inline-block
-              mb-1 mb-md-2 mr-md-1 shadow">
-              Markdown
-              <span class="badge badge-pill">👍</span>
-            </li>
-            <li
-              class="list-group-item list-group-item-primary d-inline-block
-              mb-1 mb-md-2 mr-md-1 shadow">
-              JavaScript
-              <span class="badge badge-pill">👌</span>
-            </li>
-            <li
-              class="list-group-item list-group-item-warning d-inline-block
-              mb-1 mb-md-2 mr-md-1 shadow">
-              CSS
-              <span class="badge badge-pill">👎</span>
-            </li>
-            <li
-              class="list-group-item list-group-item-danger d-inline-block
-              mb-1 mb-md-2 mr-md-1 shadow">
-              JS frameworks
-              <span class="badge badge-pill">😢</span>
-            </li>
-          </ul>
-
-          <h3 class="h5 pb-2"><u>My spare time</u></h3>
-          <ul class="list-group-horizontal pl-0">
-            <li class="list-group-item d-inline-block bg-light shadow list">
-              Swim 🏊
-            </li>
-            <li class="list-group-item d-inline-block bg-light shadow">
-              Bike 🚴‍
-            </li>
-            <li class="list-group-item d-inline-block bg-light shadow">
-              Run 🏃‍
-            </li>
-            <!-- Start Images Desktop / Tablet only-->
-
-            <div class="d-none d-lg-block mt-4">
-              <h6
-                class="d-none d-md-block figure-caption
-                blockquote-footer mb-2">
-                Challenge Roth
-              </h6>
-              <img
-                style="height: 250px; width: auto"
-                src="/img/Roth.jpeg"
-                class="img-fluid img-thumbnail rounded shadow-sm d-none
-                d-md-block"
-                alt="biking in Roth"
-                />
-              <!-- Additional Image for extra large screens-->
-              <img
-                style="height: auto; width: 370px"
-                src="/img/swim.JPG"
-                class="img-fluid img-thumbnail rounded shadow-sm d-none
-                d-xl-block mt-2"
-                alt="pre swim selfie"
-                />
-            </div>
-
-            <!-- END Images Desktop / Tablet only -->
-          </ul>
-        </div>
+          <!-- END Images Desktop / Tablet only -->
+        </ul>
       </div>
     </section>
 
@@ -174,282 +148,224 @@
 
     <!-- Divisor My Contact Details-->
 
-    <div
-      class="bg-light py-3 my-3 border-top
-      border-bottom border-light"
-      id="contact">
-      <h6 class="h3 container my-2">My Contact Details</h6>
+    <div id="contact">
+      <h6>My Contact Details</h6>
     </div>
 
     <!-- Divisor My Contact Details-->
 
     <!-- START Contact Details-->
 
-    <section class="container">
-      <div class="row">
-        <div class="wrapper d-flex w-100">
-          <div class="col-6 d-flex">
-            <div class="card w-100">
-              <div class="card-header d-flex">
-                <img
-                  img="img-fluid"
-                  src="https://img.icons8.com/wired/26/000000/phone.png"
-                  alt="phone icon"
-                  />
-                <p class="font-weight-bold mb-0 ml-2">Telefon</p>
-              </div>
-              <div
-                class="card-body d-flex flex-column
-                justify-content-between">
-                <p class="card-text d-none d-md-block">
-                  Du kannst mich jederzeit telefonisch erreichen.
-                </p>
-                <a class="btn btn-secondary" href="tel: 491735941563">Call Me</a>
-              </div>
-            </div>
-          </div>
+    <section>
 
-          <div class="col-6 d-flex">
-            <div class="card w-100">
-              <div class="card-header d-flex">
-                <img
-                  class="img-fluid"
-                  src="https://img.icons8.com/cotton/26/000000/new-post.png"
-                  alt="email icon"
-                  />
-                <p class="font-weight-bold mb-0 ml-2">E-Mail</p>
-              </div>
-              <div
-                class="card-body d-flex flex-column
-                justify-content-between">
-                <p class="card-text d-none d-md-block">
-                  Oder du schickst mir einfach eine Mail und ich antworte dir so
-                  schnell wie möglich.
-                </p>
-                <a
-                  class="btn btn-primary"
-                  href="mailto:
-                  sebastian.neumair@gmail.com?subject=Kontaktanfrage über
-                  Website&body=Hallo Sebastian,%0D%0A%0D%0A meine Anfrage ist:">Mail
-                  Me</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Contact Phone Card-->
+      <div>
+        <img
+          src="https://img.icons8.com/wired/26/000000/phone.png"
+          alt="phone icon"
+          />
+        <p>Telefon</p>
       </div>
+
+      <div>
+        <p>
+          Du kannst mich jederzeit telefonisch erreichen.
+        </p>
+        <ahref="tel: 491735941563">Call Me</a>
+      </div>
+
+      <!-- Contact Phone Card-->
+      <div>
+        <img
+          src="https://img.icons8.com/cotton/26/000000/new-post.png"
+          alt="email icon"
+          />
+        <p>E-Mail</p>
+      </div>
+
+      <div>
+        <p>
+          Oder du schickst mir einfach eine Mail und ich antworte dir so
+          schnell wie möglich.
+        </p>
+        <a
+          href="mailto:
+          sebastian.neumair@gmail.com?subject=Kontaktanfrage über
+          Website&body=Hallo Sebastian,%0D%0A%0D%0A meine Anfrage ist:">Mail
+          Me</a>
+      </div>
+
     </section>
 
     <!-- END Contact Details -->
 
     <!-- START Social Media Link-->
 
-    <div class="container d-flex mb-3 mb-md-4">
-      <figure class="container-fluid d-flex">
+    <section>
+      <figure>
         <a
           href="https://codepen.io/basti-n/"
-          class="text-decoration-none
-          text-dark"
           rel="noopener"
           target="_blank">
-          <div class="wrapperTwo p-md-5">
-            <div
-              class="wrapper p-4
-              p-md-p5">
-              <img class="img-fluid" src="img/Codepen.png" alt="Codepen logo" />
-            </div>
-          </div>
-          <figcaption class="text-center mt-md-n4">
-            Find me on Codepen
-          </figcaption>
+          <img src="img/Codepen.png" alt="Codepen logo" />
+          <figcaption>Find me on Codepen</figcaption>
         </a>
       </figure>
 
-      <figure class="container-fluid d-flex">
+      <figure>
         <a
           href="https://github.com/basti-n"
-          class="text-decoration-none
-          text-dark"
           rel="noopener"
           target="_blank">
-          <div class="wrapperTwo p-md-5">
-            <div class="wrapper p-4 p-md-p5">
-              <img
-                class="img-fluid"
-                src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-github-1.png"
-                alt="Github logo"
-                />
-            </div>
-          </div>
-          <figcaption class="text-center mt-md-n4">Find me on Github</figcaption>
+          <img
+            src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-github-1.png"
+            alt="Github logo"
+            />
+          <figcaption>Find me on Github</figcaption>
         </a>
       </figure>
 
-      <figure class="container-fluid d-flex">
+      <figure>
         <a
           href="https://www.linkedin.com/in/sebastian-neumair/"
-          class="text-decoration-none text-dark"
           rel="noopener"
           target="_blank">
-          <div class="wrapperTwo p-md-5">
-            <div class="wrapper p-4 p-md-p5">
-              <img
-                class="img-fluid"
-                src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-linkedin-4.png"
-                alt="LinkedIn logo"
-                />
-            </div>
-          </div>
-          <figcaption class="text-center mt-md-n4">Find me on LinkedIn</figcaption>
+          <img
+            src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-linkedin-4.png"
+            alt="LinkedIn logo"
+            />
+          <figcaption>Find me on LinkedIn</figcaption>
         </a>
       </figure>
-    </div>
+
+    </section>
 
     <!-- END Social Media Link-->
 
     <!-- Divisor My Contact Details-->
 
-    <div class="bg-light py-3 mb-3" id="bio">
-      <h6 class="h3 container my-2">My Journey Thus Far</h6>
+    <div>
+      <h6>My Journey Thus Far</h6>
     </div>
 
     <!-- Divisor My Contact Details-->
 
     <!-- START Personal Information & CV -->
 
-    <section class="container">
-      <div class="row">
-        <article class="col-12 col-md-6 px-md-3 mb-3 mt-2">
-          <h4 class="h5 mb-3 d-none d-md-inline-block">Studium, PM und ein
-            bisschen was mit <q>Digital</q></h4>
-          <h4 class="h5 mb-3 d-inline-block d-md-none">Studium, PM
-            mit bisschen <q>Digital</q></h4>
-          <p class="text-body text-justify mb-2 mb-md-4">
-            Vier Jahre Berufserfahrung im digital Produktmanagement nach
-            klassischem
-            BWL-Studium mit Schwerpunkt Banking und Strategic Management.
-            Klingt
-            trocken? Nicht wirklich, ohne die Arbeit im Produktmanagement
-            hätte
-            ich vermutlich nie zum
-            <span class="text-monospace">entwickeln</span> gefunden.
-          </p>
-          <h6 class="alert-heading mb-2 mt-3">I like building stuff</h6>
-          <div class="border-bottom border w-75 mb-3"></div>
-          <p class="text-body text-justify mb-2 mb-md-4">
-            Über meine Arbeit als Product Owner bei CHECK24, u.a.
-            verantwortlich für die Desktop und Tablet Website, bin ich zum
-            <span class="text-monospace">coden</span>
-            gekommen. Nach und nach, dank Hilfe der
-            Entwicklerkollegen und etwas Eigenstudium konnte ich den
-            Code Hieroglyphen zumindest in Teilen Bedeutung zuordnen.<span
-              class="d-none d-lg-inline-block">Und das Beste?
-              HTML und CSS können direkt im Browser verändert werden, die
-              Feature-
-              und Produktspecs waren mit meinen selbst rudimentären
-              Kenntnissen
-              somit
-              schnell und einfach erstellt. Schnell mal Specs für wording
-              changes...Kein Problem!
-            </span>
-          </p>
-          <h6 class="alert-heading mb-2 mt-3">And I like to build it myself</h6>
-          <div class="border-bottom border w-75 mb-3"></div>
-          <p class="text-body text-justify">
-            Nach vier Jahren CHECK24
-            entschloss ich mich Mitte 2018 meine Interessen für
-            Produktmanagement und Banking zu vereinen und gemeinsam mit einem
-            kleinen Team eine digital-only, mobile-first Bank aufzubauen.
-          </p>
-        </article>
+    <section>
 
-        <article class="col col-md-6 px-md-3 mb-3 mt-2">
-          <h4 class="h5 mb-3">Curriculum Vitae</h4>
+      <article>
+        <h4>Studium, PM und ein
+          bisschen was mit <q>Digital</q></h4>
+        <p>
+          Vier Jahre Berufserfahrung im digital Produktmanagement nach
+          klassischem
+          BWL-Studium mit Schwerpunkt Banking und Strategic Management.
+          Klingt
+          trocken? Nicht wirklich, ohne die Arbeit im Produktmanagement
+          hätte
+          ich vermutlich nie zum
+          <span>entwickeln</span> gefunden.
+        </p>
 
-          <ul class="list-item pl-0 mb-5">
-            <li class="list-group-item list-group-item-action shadow
-              disabled">
-              <div class="d-flex mb-2 mt-3">
-                <small class="align-self-center">ab März 2019</small>
-                <img
-                  class="img-fluid mb-2
-                  ml-auto"
-                  src="https://www.neuefische.de/static/neuefische-gmbh-logo.svg"
-                  alt="neue fische logo"
-                  />
-              </div>
-              <div class="d-flex justify-content-start">
-                <h5>neue fische Web Development Bootcamp</h5>
-              </div>
-              <p>From product manager to web developer in 12 weeks 💪</p>
-            </li>
+        <h6>I like building stuff</h6>
+        <p>
+          Über meine Arbeit als Product Owner bei CHECK24, u.a.
+          verantwortlich für die Desktop und Tablet Website, bin ich zum
+          <span>coden</span>
+          gekommen. Nach und nach, dank Hilfe der
+          Entwicklerkollegen und etwas Eigenstudium konnte ich den
+          Code Hieroglyphen zumindest in Teilen Bedeutung zuordnen.
+          <span class="text__desktop--mobile-hide">
+            Und das Beste? HTML und CSS können direkt im Browser verändert
+            werden, die Feature-
+            und Produktspecs waren mit meinen selbst rudimentären Kenntnissen
+            somit
+            schnell und einfach erstellt. Schnell mal Specs für wording
+            changes...Kein Problem!
+          </span>
+        </p>
 
-            <li class="list-group-item list-group-item-action shadow">
-              <div class="d-flex mb-2 mt-3">
-                <small class="align-self-center">November 2018 bis März 2019</small>
-                <img
-                  style="height: 50px; width: 100px"
-                  class="img-fluid mb-2
-                  ml-auto"
-                  src="https://www.hypo-portal.cz/images/banky_cz/large/13.svg"
-                  alt="airbank logo"
-                  />
-              </div>
-              <div class="d-flex justify-content-start">
-                <h5>Product Owner Savings & Spendings</h5>
-              </div>
-              <p>Building a bank. From the ground up 🏦</p>
-            </li>
+        <h6>And I like to build it myself</h6>
+        <p>
+          Nach vier Jahren CHECK24
+          entschloss ich mich Mitte 2018 meine Interessen für
+          Produktmanagement und Banking zu vereinen und gemeinsam mit einem
+          kleinen Team eine digital-only, mobile-first Bank aufzubauen.
+        </p>
+      </article>
 
-            <!-- START collapsed items-->
+      <!-- CV with Cards open (full details)-->
 
-            <li class="list-group-item list-group-item-action shadow">
-              <div class="wrapper d-flex mb-2 mt-3">
-                <h6 class="text-secondary mr-auto">Product Manager</h6>
-                <img
-                  style="height: 30px; width: auto"
-                  src="https://www.check24.de/assets/images/web/misc/download/Logo_Check24.png"
-                  alt="check24 logo"
-                  />
-              </div>
-            </li>
+      <article>
+        <h4>Curriculum Vitae</h4>
 
-            <li class="list-group-item list-group-item-action shadow">
-              <div class="wrapper d-flex mb-2 mt-3">
-                <h6 class="text-secondary mr-auto">Master of Finance</h6>
-                <img
-                  style="height: 30px; width: auto"
-                  src="https://staff.napier.ac.uk/services/corporateaffairs/downloadable-resources/PublishingImages/EdNapUniLogoCMYK.jpg"
-                  alt="napier university logo"
-                  />
-              </div>
-            </li>
+        <ul>
+          <li>
+            <p>ab März 2019</p>
+            <img
+              src="https://www.neuefische.de/static/neuefische-gmbh-logo.svg"
+              alt="neue fische logo"
+              />
 
-            <li class="list-group-item list-group-item-action shadow">
-              <div class="wrapper d-flex mb-2 mt-3">
-                <h6 class="text-secondary mr-auto">Bachelor of Finance</h6>
-                <img
-                  style="height: 30px; width: auto"
-                  src="http://kunden.tristan-germer.de/hm/studieninformationstag/2014/img/HM-Logo-RGB-transparent-418x174.png"
-                  alt="HM muenchen university logo"
-                  />
-              </div>
-            </li>
+            <h5>neue fische Web Development Bootcamp</h5>
+            <p>From product manager to web developer in 12 weeks 💪</p>
+          </li>
 
-            <!-- END collapsed items-->
-          </ul>
-        </article>
-      </div>
+          <li>
+            <p>November 2018 bis März 2019</p>
+            <img
+              style="height: 50px; width: 100px"
+              src="https://www.hypo-portal.cz/images/banky_cz/large/13.svg"
+              alt="airbank logo"
+              />
+
+            <h5>Product Owner Savings & Spendings</h5>
+            <p>Building a bank. From the ground up 🏦</p>
+          </li>
+
+          <!-- START collapsed items-->
+
+          <li>
+            <h6>Product Manager</h6>
+            <img
+              style="height: 30px; width: auto"
+              src="https://www.check24.de/assets/images/web/misc/download/Logo_Check24.png"
+              alt="check24 logo"
+              />
+          </li>
+
+          <li>
+            <h6>Master of Finance</h6>
+            <img
+              style="height: 30px; width: auto"
+              src="https://staff.napier.ac.uk/services/corporateaffairs/downloadable-resources/PublishingImages/EdNapUniLogoCMYK.jpg"
+              alt="napier university logo"
+              />
+          </li>
+
+          <li>
+            <h6>Bachelor of Finance</h6>
+            <img
+              style="height: 30px; width: auto"
+              src="http://kunden.tristan-germer.de/hm/studieninformationstag/2014/img/HM-Logo-RGB-transparent-418x174.png"
+              alt="HM muenchen university logo"
+              />
+          </li>
+
+          <!-- END collapsed items-->
+        </ul>
+      </article>
+
     </section>
 
     <!-- END Personal Information & CV -->
 
     <!-- START footer -->
 
-    <div class="card">
-      <footer class="card-header small">
-        by sebastianneumair @neuefische developer bootcamp
-      </footer>
-    </div>
+    <footer>
+      by sebastianneumair @neuefische developer bootcamp
+    </footer>
 
     <!-- END footer-->
   </body>
