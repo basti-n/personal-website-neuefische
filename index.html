@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Sebastians personal website powered by
-      css" />
-    <meta name="keywords" contents="personal website, pure css no frameworks,
-      neue fische,
-      bootcamp">
+      CSS" />
+    <meta name="keywords" contents="personal website, pure css, no css
+      frameworks,
+      neue fische, bootcamp">
     <meta name="author" content="Sebastian Neumair">
     <title>my first website</title>
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/png" sizes="16x16"
       href="img/favicon_io/favicon-16x16.png">
   </head>
@@ -22,35 +23,48 @@
     <!-- START NAV BAR -->
 
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Sebastian Neumair</a>
-          </li>
+      <nav class="navigation flex flex--centered">
 
-          <li>
+        <a class="navigation__item navigation__item--primary" href="#">
+          <img class="navigation__logo"
+            src="https://image.flaticon.com/icons/svg/1197/1197511.svg"
+            alt="home logo">
+          <p class="navigation__text">Sebastian
+            Neumair</p>
+        </a>
 
-            <div>
-              <a href="#contact">
-                <img
-                  src="https://image.flaticon.com/icons/svg/181/181511.svg"
-                  alt="contactMe logo"
-                  />
-                <span>Kontakt</span>
-              </a>
-
-
-              <a href="#bio">
-                <img
-                  src="https://image.flaticon.com/icons/svg/1167/1167203.svg"
-                  alt="cv logo"
-                  />
-                <span>Biografie</span></a>
-            </div>
+        <div class="flex flex--centered navigation__items">
+          <a class="navigation__item navigation__item--secondary
+            navigation__text"
+            href="#contact">
+            <img class="navigation__logo"
+              src="https://image.flaticon.com/icons/svg/181/181511.svg"
+              alt="contactMe logo"
+              />
+            <p class="navigation__text">Kontakt</p>
+          </a>
 
 
-          </li>
-        </ul>
+          <a class="navigation__item navigation__item--secondary
+            navigation--link" href="#bio">
+            <img class="navigation__logo"
+              src="https://image.flaticon.com/icons/svg/1167/1167203.svg"
+              alt="cv logo"
+              />
+            <p class="navigation__text">Biografie</p>
+          </a>
+
+
+          <a class="navigation__item navigation__item--secondary" href="#blog">
+            <img class="navigation__logo"
+              src="https://image.flaticon.com/icons/svg/1187/1187595.svg"
+              alt="blog logo"
+              />
+            <p class="navigation__text">Blog</p>
+
+          </a>
+        </div>
+
       </nav>
     </header>
 
