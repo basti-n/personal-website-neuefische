@@ -1,0 +1,56 @@
+/* Responsive webpage using grid 
+
+  Desktop: < 1000px
+  Tablet / Desktop < 760px
+  Mobile < 480px
+
+*/
+
+* {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  background: teal;
+  opacity: 0.8;
+  height: 200px;
+}
+
+.navigation__item {
+  color: white;
+  font-size: 5em;
+  font: bolder;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.navigation__text {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.navigation__item--primary {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.navigation__logo {
+  height: 25px;
+  width: auto;
+  box-shadow: 4px 4px 8px lightgray;
+}
