@@ -54,3 +54,16 @@ body {
   width: auto;
   box-shadow: 4px 4px 8px lightgray;
 }
+
+.picture {
+  width: 100px;
+  height: auto;
+}
+
+.picture--desktop {
+  /* */
+}
+
+.picture--mobile {
+  /* */
+}
