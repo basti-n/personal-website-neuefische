@@ -4,7 +4,13 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 20px 30px; }
+
+main {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  text-align: justify; }
 
 .grid {
   display: grid;
@@ -17,5 +23,24 @@ body {
 
 .flex {
   display: flex; }
+
+.button__back {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: tomato;
+  color: black;
+  font-size: 2em;
+  position: fixed;
+  left: 20px;
+  bottom: 60px;
+  border-radius: 90%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out, box-shadow 2s linear; }
+  .button__back:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=style.css.map */

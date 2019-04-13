@@ -8,4 +8,11 @@ body {
   margin: 0;
   font-family: sans-serif;
   overflow: hidden;
+  padding: 20px 30px;
+}
+
+main {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  text-align: justify;
 }
