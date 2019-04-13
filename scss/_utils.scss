@@ -3,3 +3,15 @@
 // Margin
 
 // Padding
+
+.paddingLeftRight {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// Full Width
+
+.full-width {
+  transform: translateX(-50%);
+  margin-right: -100vw;
+}

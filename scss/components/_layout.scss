@@ -1,8 +1,5 @@
 .grid {
   display: grid;
-  grid-template-rows: 80px auto 48px; // header, scroll-area, footer
-  // 100vh is buggy on mobile browsers,
-  // so position fixed and following lines are needed
   position: fixed;
   height: 100%;
   width: 100%;

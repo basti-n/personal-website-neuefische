@@ -1,20 +1,42 @@
+.paddingLeftRight {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.full-width {
+  transform: translateX(-50%);
+  margin-right: -100vw; }
+
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
 
 body {
-  margin: 0;
-  font-family: sans-serif;
+  display: grid;
+  grid-template: 90px 1fr 40px/repeat(2, 1fr);
+  grid-template-areas: "header header" "main main" "footer footer";
   overflow: hidden;
-  padding: 20px 30px; }
+  background: #e8ecf1; }
 
 main {
+  grid-area: main;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  text-align: justify; }
+  text-align: justify;
+  padding: 25px; }
+  main::after {
+    position: fixed;
+    content: "";
+    bottom: 40px;
+    left: 0;
+    overflow-y: hidden;
+    height: 10%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 90%); }
 
 .grid {
   display: grid;
-  grid-template-rows: 80px auto 48px;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -24,10 +46,27 @@ main {
 .flex {
   display: flex; }
 
+footer {
+  display: flex;
+  align-items: center;
+  grid-area: footer;
+  background: #2e3131;
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.footer__social-media {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; }
+
 .button__back {
   width: 50px;
   height: 50px;
   display: flex;
+  z-index: 2;
   justify-content: center;
   align-items: center;
   background: tomato;
@@ -42,5 +81,31 @@ main {
   .button__back:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); }
+
+header {
+  display: flex;
+  grid-area: header;
+  background: #2e3131;
+  color: white;
+  text-transform: uppercase;
+  align-items: flex-end;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.header__icon {
+  font-size: 1.5em;
+  letter-spacing: 5px; }
+
+.nav {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 5px; }
+
+.nav__item {
+  list-style: none; }
 
 /*# sourceMappingURL=style.css.map */

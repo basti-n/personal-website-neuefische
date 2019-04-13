@@ -1,0 +1,31 @@
+// styles for header section
+
+header {
+  display: flex;
+  grid-area: header;
+  background: rgba(46, 49, 49, 1);
+  color: $text-color;
+  text-transform: uppercase;
+  align-items: flex-end;
+  padding: 15px;
+  padding-left: $primary-padding;
+  padding-right: $primary-padding;
+}
+
+.header__icon {
+  font-size: 1.5em;
+  letter-spacing: 5px;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 5px;
+}
+
+.nav__item {
+  list-style: none;
+}
