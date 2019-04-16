@@ -3,6 +3,7 @@
 header {
   display: flex;
   grid-area: header;
+  width: 100vw;
   background: rgba(46, 49, 49, 1);
   color: $text-color;
   text-transform: uppercase;
@@ -28,4 +29,59 @@ header {
 
 .nav__item {
   list-style: none;
+}
+
+.menu--mobile {
+  display: none;
+  position: relative;
+  margin-left: auto;
+  grid-area: mobilemenu;
+  top: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  height: 50px;
+  background-color: tomato;
+  border-radius: 50%;
+}
+
+.menu__icon--mobile {
+  position: absolute;
+  height: 10px;
+  background: white;
+  width: 60%;
+  height: 4px;
+  transition: transform 0.4s ease;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    height: 4px;
+    width: 100%;
+    background: inherit;
+  }
+  &:after {
+    top: 10px;
+  }
+}
+
+.menu__toggle {
+  opacity: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  &:checked ~ .menu__icon--mobile {
+    transform: rotate(135deg);
+  }
+  &:checked:hover ~ .menu__icon--mobile {
+    transform: rotate(225deg);
+  }
+  &:checked ~ .menu__icon--mobile::before,
+  &:checked ~ .menu__icon--mobile::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
 }
